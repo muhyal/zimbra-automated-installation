@@ -14,6 +14,10 @@ This Script install and configures bind9 with the domain and IP that is defined 
 ##Usage and Example
 The ZimbraEasyInstall Script is an easy way to install Zimbra Collaboration, without be worry of the DNS configuration, OS depencies, etc. Just execute it and after a few minutes have Zimbra up and running.
 
+```bash
+wget https://git.io/JtZKh -O ZimbraEasyInstall
+```
+
 Just run the Script adding the TLD domain for your Zimbra Collaboration server, the IP of the DNS server (usually will be the same of the server, but instead you are using different eth interfaces), and add the password for the Zimbra Collaboration server.
 ```bash
 ./ZimbraEasyInstall dominio.cu 192.168.211.40 Zimbra2021
