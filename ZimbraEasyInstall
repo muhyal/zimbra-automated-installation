@@ -1,4 +1,11 @@
 #!/bin/bash -x
+#quitar el systemd-resolved en Ubuntu 18.04
+sudo systemctl disable systemd-resolved.service
+sudo service systemd-resolved stop
+
+#Limpieza del postfix
+apt-get purge -y postfix*
+
 ## Preparing all the variables like IP, Hostname, etc, all of them from the container
 RANDOMHAM=$(date +%s|sha256sum|base64|head -c 10)
 RANDOMSPAM=$(date +%s|sha256sum|base64|head -c 10)
